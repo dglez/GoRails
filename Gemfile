@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'bourbon'
+gem 'haml-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
