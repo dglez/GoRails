@@ -40,4 +40,25 @@ $('.switch').click(->
 	
 	
 	)
+$('.menu a').click((event)->	
+	event.preventDefault()
+	if toggle
+		$('.switch')
+			.transition({ rotate: '180deg' })
+		$('.menu')
+			.transition({ x: -liHeight + 'px' })
+		toggle = 
+			false
+		return
+	else
+		$('.switch')
+			.transition({ rotate: '0deg' })
+		$('.menu')
+			.transition({ x: '0px' })
+		toggle = 
+			true
+		return
+	
+	
+	)
 	
