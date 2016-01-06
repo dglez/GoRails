@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users
   root 'static_pages#home' 
   get 'home' => 'static_pages#home'
   get 'myevents' => 'static_pages#myEvents'

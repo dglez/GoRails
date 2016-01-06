@@ -8,10 +8,11 @@
 
 	%body
 		=if flash[:notice]
-			.notice= flash[:notice] 
+			.notice= flash[:notice]
 		=if flash[:alert]
 			.alert= flash[:alert]
-		= render 'header'
+
+		= render 'partials/header'
 		= yield 
 		%script{:src =>"assets/jquery.transit.min.js" }
 		%script{:src =>"assets/custom.js"}
