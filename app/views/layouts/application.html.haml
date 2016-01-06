@@ -7,6 +7,10 @@
 		= csrf_meta_tags 
 
 	%body
+		=if flash[:notice]
+			.notice= flash[:notice] 
+		=if flash[:alert]
+			.alert= flash[:alert]
 		= render 'header'
 		= yield 
 		%script{:src =>"assets/jquery.transit.min.js" }
